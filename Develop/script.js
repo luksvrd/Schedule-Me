@@ -27,3 +27,20 @@ $(document).ready(function(){
   $("#18 .description").val(localStorage.getItem("18"))
   $("#19 .description").val(localStorage.getItem("19"))
   $("#20 .description").val(localStorage.getItem("20"))
+
+      // change color depending on whether event is in past, present, or future
+      let currentHour = dayjs().format("HH");
+
+      $(".description").each(function(){
+          var timeEl = $(this).parent().attr("id");
+          console.log(timeEl)
+          if (timeEl < currentHour) {
+              $(this).addClass("past")
+          } else if (timeEl === currentHour) {
+              $(this).addClass("present")
+          } else if (timeEl > currentHour) {
+              $(this).addClass("future")
+          }
+
+      })
+  });
