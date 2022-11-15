@@ -8,7 +8,7 @@ This is a daily calendar that displays the current date at the top of the calend
 
 ## Website
 https://luksvrd.github.io/Schedule-Me/
-
+![ScheduleMe](https://github.com/luksvrd/Schedule-Me/blob/master/Assets/Schedule.png?raw=true)
 
 ## Contributions
 Made by Lukas Virden
